@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D859EA0D0F3038A49065DB /* Pods_BM_Period.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C37C3B1C49E038E398D6CE /* Pods_BM_Period.framework */; };
 		CE96389A20601E0F00BC6AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96389920601E0F00BC6AE1 /* AppDelegate.swift */; };
 		CE96389C20601E0F00BC6AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96389B20601E0F00BC6AE1 /* ViewController.swift */; };
 		CE96389F20601E0F00BC6AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE96389D20601E0F00BC6AE1 /* Main.storyboard */; };
 		CE9638A220601E0F00BC6AE1 /* BM_Period.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9638A020601E0F00BC6AE1 /* BM_Period.xcdatamodeld */; };
 		CE9638A420601E0F00BC6AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9638A320601E0F00BC6AE1 /* Assets.xcassets */; };
 		CE9638A720601E0F00BC6AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9638A520601E0F00BC6AE1 /* LaunchScreen.storyboard */; };
+		CE9638AF20607BE500BC6AE1 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9638AE20607BE500BC6AE1 /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45C8A9C74E8DCE9928E8C7D7 /* Pods-BM Period.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BM Period.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BM Period/Pods-BM Period.debug.xcconfig"; sourceTree = "<group>"; };
+		58447BD277F5DC751749472F /* Pods-BM Period.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BM Period.release.xcconfig"; path = "Pods/Target Support Files/Pods-BM Period/Pods-BM Period.release.xcconfig"; sourceTree = "<group>"; };
+		62C37C3B1C49E038E398D6CE /* Pods_BM_Period.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BM_Period.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE96389620601E0F00BC6AE1 /* BM Period.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BM Period.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE96389920601E0F00BC6AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE96389B20601E0F00BC6AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		CE9638A320601E0F00BC6AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9638A620601E0F00BC6AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9638A820601E0F00BC6AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9638AE20607BE500BC6AE1 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D859EA0D0F3038A49065DB /* Pods_BM_Period.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		613942F8ADA9A19F1DE54604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C8A9C74E8DCE9928E8C7D7 /* Pods-BM Period.debug.xcconfig */,
+				58447BD277F5DC751749472F /* Pods-BM Period.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FC3BC07954F747AA5F4BA21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62C37C3B1C49E038E398D6CE /* Pods_BM_Period.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE96388D20601E0F00BC6AE1 = {
 			isa = PBXGroup;
 			children = (
 				CE96389820601E0F00BC6AE1 /* BM Period */,
 				CE96389720601E0F00BC6AE1 /* Products */,
+				613942F8ADA9A19F1DE54604 /* Pods */,
+				7FC3BC07954F747AA5F4BA21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				CE96389920601E0F00BC6AE1 /* AppDelegate.swift */,
 				CE96389B20601E0F00BC6AE1 /* ViewController.swift */,
 				CE96389D20601E0F00BC6AE1 /* Main.storyboard */,
+				CE9638AE20607BE500BC6AE1 /* MyCustomCell.swift */,
 				CE9638A320601E0F00BC6AE1 /* Assets.xcassets */,
 				CE9638A520601E0F00BC6AE1 /* LaunchScreen.storyboard */,
 				CE9638A820601E0F00BC6AE1 /* Info.plist */,
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9638AB20601E0F00BC6AE1 /* Build configuration list for PBXNativeTarget "BM Period" */;
 			buildPhases = (
+				BAF8289725CAADA21AC0C9E2 /* [CP] Check Pods Manifest.lock */,
 				CE96389220601E0F00BC6AE1 /* Sources */,
 				CE96389320601E0F00BC6AE1 /* Frameworks */,
 				CE96389420601E0F00BC6AE1 /* Resources */,
+				35A9D04E4A5087C4DB91521E /* [CP] Embed Pods Frameworks */,
+				AF1397F7EE40B87EEEA55CCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +164,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35A9D04E4A5087C4DB91521E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BM Period/Pods-BM Period-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BM Period/Pods-BM Period-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1397F7EE40B87EEEA55CCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BM Period/Pods-BM Period-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF8289725CAADA21AC0C9E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BM Period-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE96389220601E0F00BC6AE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +225,7 @@
 			files = (
 				CE96389C20601E0F00BC6AE1 /* ViewController.swift in Sources */,
 				CE96389A20601E0F00BC6AE1 /* AppDelegate.swift in Sources */,
+				CE9638AF20607BE500BC6AE1 /* MyCustomCell.swift in Sources */,
 				CE9638A220601E0F00BC6AE1 /* BM_Period.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +361,7 @@
 		};
 		CE9638AC20601E0F00BC6AE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C8A9C74E8DCE9928E8C7D7 /* Pods-BM Period.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +376,7 @@
 		};
 		CE9638AD20601E0F00BC6AE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58447BD277F5DC751749472F /* Pods-BM Period.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
